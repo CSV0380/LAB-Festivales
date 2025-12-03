@@ -170,7 +170,7 @@ def variación_mensual_asistentes(festivales:list[Festival])->list[tuple[str,int
 ```
 Resultado esperado
 ```
-test_variación_mensual_asistentes
+test_variacion_mensual_asistentes
 [('Abril', 17000), ('Mayo', -12000), ('Junio', 138000), ('Julio', -61000), ('Agosto', 98000), ('Septiembre', -200000)]
 ```
 
