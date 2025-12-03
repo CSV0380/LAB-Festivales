@@ -2,7 +2,7 @@
 # Curso 23-24. 2ª Convocatoria. PYTHON
 
 **Autor:**  José María Luna
-**Revisores:**  Toñi Reina, Patricia Jiménez
+**Revisores:**  Toñi Reina, Patricia Jiménez, Alfonso Bengoa
 **Última modificación:** 10/07/2024
 
 ### Contexto
