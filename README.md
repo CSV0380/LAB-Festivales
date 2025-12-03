@@ -63,8 +63,7 @@ Festival(nombre='Tomorrowland', fecha_comienzo=datetime.date(2024, 7, 19), fecha
 
 Implemente las siguientes funciones en un módulo `festivales.py`:
 
-1. `lee_festivales`: recibe una cadena de texto con la ruta de un fichero `csv`, y devuelve una lista de tuplas `Festival` con la información contenida en el fichero. La lista de festivales devuelta debe estar ordenada de manera ascendente por fecha de comienzo de los mismos. **(1.25 punto)**
-
+1. `lee_festivales`: recibe una cadena de texto con la ruta de un fichero `csv`, y devuelve una lista de tuplas `Festival` con la información contenida en el fichero. La lista de festivales devuelta debe estar ordenada de manera ascendente por fecha de comienzo de los mismos. 
 ```python
 def lee_festivales (archivo:str)->list[Festival]
 ```
@@ -78,7 +77,7 @@ Los 3 primeros:
         Festival(nombre='Viña Rock', fecha_comienzo=datetime.date(2024, 4, 28), fecha_final=datetime.date(2024, 5, 1), estado='CELEBRADO', precio=90.99, entradas_vendidas=17000, artistas=[Artista(nombre='Residente', hora_comienzo=datetime.time(21, 0), cache=300), Artista(nombre='Natos y Waor', hora_comienzo=datetime.time(22, 30), cache=350), Artista(nombre='Kase.O', hora_comienzo=datetime.time(0, 0), cache=400), Artista(nombre='Zetazen', hora_comienzo=datetime.time(1, 30), cache=200), Artista(nombre='Skrillex', hora_comienzo=datetime.time(3, 30), cache=600)], top=False)
 ```
 
-2. `total_facturado`: esta función devuelve el importe total facturado de los festivales que se han celebrado entre dos fechas dadas. La función recibe una lista de tuplas de tipo `Festival` y dos fechas, cuyos valores por defecto son `None`. La función devuelve un número real con el total facturado por los festivales celebrados entre las dos fechas dadas. Si la fecha inicial es `None` se hace el cálculo sin limitar la fecha mínima de los festivales. Si la fecha final es `None` se hace el cálculo sin limitar la fecha máxima de los festivales. Para calcular el total facturado por festival hay que multiplicar el número de entradas por el precio de la entrada del festival. **Nota**: tenga en cuenta que la función debe tomar la facturación de los festivales con estado _celebrado_ en el rango de fechas, es decir, solo se tendrán en cuenta aquellos festivales que empiezan y acaban dentro del rango de fechas. **(1.25 punto)**
+2. `total_facturado`: esta función devuelve el importe total facturado de los festivales que se han celebrado entre dos fechas dadas. La función recibe una lista de tuplas de tipo `Festival` y dos fechas, cuyos valores por defecto son `None`. La función devuelve un número real con el total facturado por los festivales celebrados entre las dos fechas dadas. Si la fecha inicial es `None` se hace el cálculo sin limitar la fecha mínima de los festivales. Si la fecha final es `None` se hace el cálculo sin limitar la fecha máxima de los festivales. Para calcular el total facturado por festival hay que multiplicar el número de entradas por el precio de la entrada del festival. **Nota**: tenga en cuenta que la función debe tomar la facturación de los festivales con estado _celebrado_ en el rango de fechas, es decir, solo se tendrán en cuenta aquellos festivales que empiezan y acaban dentro del rango de fechas. 
 
 ```python
 def total_facturado(festivales:list[Festival], fecha_ini:date|None=None, fecha_fin:date|None=None)->float
@@ -99,7 +98,7 @@ test_total_facturado
 Entre 2024-06-01 y 2024-06-15 el total es: 6925320.0
 ```
 
-3. `artista_top`: recibe una lista de tuplas de tipo `Festival` y devuelve una tupla compuesta por un número entero y una cadena de texto, que representan el número de festivales y el nombre del artista que haya participado en más festivales que finalmente se han celebrado, respectivamente. **(1.75 puntos)**
+3. `artista_top`: recibe una lista de tuplas de tipo `Festival` y devuelve una tupla compuesta por un número entero y una cadena de texto, que representan el número de festivales y el nombre del artista que haya participado en más festivales que finalmente se han celebrado, respectivamente. 
 
 ```python
 def artista_top(festivales: list[Festival]) -> tuple[int, str]
@@ -110,8 +109,7 @@ test_artista_top
 El artista que ha actuado en más festivales es (4, 'The Strokes')
 ````
 
-4. `mes_mayor_beneficio_medio`: recibe una lista de tuplas de tipo `Festival` y devuelve una cadena de texto que será el nombre del mes, en español, de aquel que haya obtenido un mayor beneficio medio. Es decir, cada festival tiene un beneficio que se calcula a partir de las entradas vendidas menos el caché de los artistas. Pues esta función debe calcular el beneficio medio que se ha obtenido cada mes y devolver aquel cuyo beneficio haya sido el mayor. **Nota**: Si hubiera algún festival que se celebra entre dos meses, se imputará al mes en el que comienza. Por ejemplo, un festival que comience el 30 de junio y acabe el 4 de julio será imputado al mes de junio. **(2.25 puntos)**
-
+4. `mes_mayor_beneficio_medio`: recibe una lista de tuplas de tipo `Festival` y devuelve una cadena de texto que será el nombre del mes, en español, de aquel que haya obtenido un mayor beneficio medio. Es decir, cada festival tiene un beneficio que se calcula a partir de las entradas vendidas menos el caché de los artistas. Pues esta función debe calcular el beneficio medio que se ha obtenido cada mes y devolver aquel cuyo beneficio haya sido el mayor. **Nota**: Si hubiera algún festival que se celebra entre dos meses, se imputará al mes en el que comienza. Por ejemplo, un festival que comience el 30 de junio y acabe el 4 de julio será imputado al mes de junio. 
 ```python
 def mes_mayor_beneficio_medio(festivales: list[Festival]) -> str
 ```
@@ -121,7 +119,7 @@ test_mes_mayor_beneficio_medio
 El mes de mayor beneficio medio es: Mayo
 ```
 
-5. `artistas_comunes`: recibe una lista de tuplas de tipo `Festival` y dos cadenas de texto `festi1` y `festi2`, y devuelve una lista con los nombres de aquellos artistas que se repitan entre `festi1` y `festi2`. **Nota**: se considera que no hay festivales repeidos. **(1.75 puntos)**
+5. `artistas_comunes`: recibe una lista de tuplas de tipo `Festival` y dos cadenas de texto `festi1` y `festi2`, y devuelve una lista con los nombres de aquellos artistas que se repitan entre `festi1` y `festi2`. **Nota**: se considera que no hay festivales repeidos. 
 
 ```python
 def artistas_comunes(festivales: list[Festival], festi1: str, festi2:str) -> list[str]
@@ -138,7 +136,7 @@ test_artistas_comunes
 Los artistas comunes entre Iconica Fest y Primavera Sound son: []
 ```
 
-6. `festivales_top_mejor_ratio`: Cada festival tiene una duración de entre 2 y 8 días. Implemente una función que, recibiendo una lista de tuplas de tipo `Festival`, y un número `n` cuyo valor por defecto será 3, devuelva un diccionario en el que las claves son las duraciones de los festivales, y los valores listas con los nombres de los `n` festivales de más calidad (ordenados de más a menos calidad). La calidad de un festival viene dada por el ratio entre entradas vendidas y número de artistas participantes en el festival. Cuanto más alto es este ratio, más calidad tiene el festival. **(1.75 punto)**
+6. `festivales_top_mejor_ratio`: Cada festival tiene una duración de entre 2 y 8 días. Implemente una función que, recibiendo una lista de tuplas de tipo `Festival`, y un número `n` cuyo valor por defecto será 3, devuelva un diccionario en el que las claves son las duraciones de los festivales, y los valores listas con los nombres de los `n` festivales de más calidad (ordenados de más a menos calidad). La calidad de un festival viene dada por el ratio entre entradas vendidas y número de artistas participantes en el festival. Cuanto más alto es este ratio, más calidad tiene el festival.
 
 ```python
 def festivales_top_calidad_por_duracion(festivales: list[Festival], n: int=3) -> Dict[int, list[str]]
