@@ -166,7 +166,7 @@ Para n= 4, los festivales top son:
 ```
 7. _(ejercicio añadido que no se incluía en el examen original.)_ ``variacion_mensual_asistentes``: recibe una lista de tuplas de tipo `Festival` y devuelve una lista de tuplas con cada mes y la variación que asistente de un mes repecto al anterior a los festivales. Se considerará el mes de la fecha de comienzo del festival y que cada entrada vendida se corresponde con un asistente.
 ```python
-def variación_mensual_asistentes(festivales:list[Festival])->list[tuple[str,int]]
+def variacion_mensual_asistentes(festivales:list[Festival])->list[tuple[str,int]]
 ```
 Resultado esperado
 ```
