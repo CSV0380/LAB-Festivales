@@ -3,7 +3,7 @@
 
 **Autor:**  José María Luna
 **Revisores:**  Toñi Reina, Patricia Jiménez, Alfonso Bengoa
-**Última modificación:** 10/07/2024
+**Última modificación:** 03/12/2025
 
 ### Contexto
 
