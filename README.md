@@ -174,5 +174,5 @@ test_variación_mensual_asistentes
 [('Abril', 17000), ('Mayo', -12000), ('Junio', 138000), ('Julio', -61000), ('Agosto', 98000), ('Septiembre', -200000)]
 ```
 
-Pruebe las funciones implementadas en un módulo `festivales_test.py`. Use una función de test, con los parámetros adecuados para cada función a probar. Las funciones que implemente deben comprobar las diferentes casuísticas que pudieran darse en cada ejercicio. Se recomienda que lo vaya haciendo a medida que vaya resolviendo los distintos apartados. Cada test puntuará con 0.25 para cada ejercicio, y para obtener la calificación la función deberá poder ejecutarse y los resultados deberán coincidir con los que se indican a continuación:
+Pruebe las funciones implementadas en un módulo `festivales_test.py`. Use una función de test, con los parámetros adecuados para cada función a probar. Las funciones que implemente deben comprobar las diferentes casuísticas que pudieran darse en cada ejercicio. Se recomienda que lo vaya haciendo a medida que vaya resolviendo los distintos apartados. Cada test puntuará con 0.25 para cada ejercicio, y para obtener la calificación la función deberá poder ejecutarse y los resultados deberán coincidir con los resultados esperados.
 
